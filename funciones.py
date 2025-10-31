@@ -3,7 +3,7 @@ def rectangulo(x,y):
 	return area
 
 def triangulo(x,y):
-	area = int((x*y)/2)
+	area = float((x*y)/2)
 	return area
 
 def circulo(x):

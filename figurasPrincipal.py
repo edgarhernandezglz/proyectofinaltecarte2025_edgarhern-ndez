@@ -9,11 +9,11 @@ areas = []
 perimetros = []
 
 for index, row in dataFile.iterrows():
-   if row['FIGURA'] == t:
+   if row['FIGURA'] == 't':
       area = triangulo(int(row['MEDIDA1']), int(row['MEDIDA2']))
-   elif row['FIGURA'] == r:
+   elif row['FIGURA'] == 'r':
       area = rectangulo(int(row['MEDIDA1']), int(row['MEDIDA2']))
-   elif row ['FIGURA'] == c:
-      area = circulo(int(row['MEDIDA1']), int(row['MEDIDA2']))
+   elif row ['FIGURA'] == 'c':
+      area = circulo(float(row['MEDIDA1']))
    print(f"Fila{index}: FIGURA={row['FIGURA']}, Medida1={row['MEDIDA1']}, Medida2={row['MEDIDA2']}, Area={area}")
 
