@@ -10,7 +10,7 @@ def a_triangulo(x,y):
 	area = float((x*y)/2)
 	return area
 
-def p_traingulo(x):
+def p_triangulo(x):
 	perimetro= int(x*3)
 	return perimetro
 
